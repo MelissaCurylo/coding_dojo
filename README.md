@@ -19,27 +19,27 @@
        
        
 - **MERN** (node modules removed)
- - Need to push Socket_io files
- - Need to push full_stack_mern files
- - Need to push mern_auth files
- - Need to push mern_deployment files
- - Update all readme.md files
+  - Need to push Socket_io files
+  - Need to push full_stack_mern files
+  - Need to push mern_auth files
+  - Need to push mern_deployment files
+  - - Update all readme.md files
        
 - **Java**
- - TBA
+  - TBA
 
 
 - **Projects**
- - Pushing projects after bootcamp
- - Need to push Homeowners Association Board application (MERN Stack)
- - Need to push T_Alchemy application (Python Stack)
- - Need to push E-Slicer application (Python Stack)
- - Need to push GitHub Timeline Application (GraphQL)  
- - Need to push SpacE application (GraphQL)
- - Need to push MemorE game application 
+  - Pushing projects after bootcamp
+  - Need to push Homeowners Association Board application (MERN Stack)
+  - Need to push T_Alchemy application (Python Stack)
+  - Need to push E-Slicer application (Python Stack)
+  - Need to push GitHub Timeline Application (GraphQL)  
+  - Need to push SpacE application (GraphQL)
+  - Need to push MemorE game application 
 
 -**Algorithms**
- - Pushing after bootcamp
+  - Pushing after bootcamp
     
 
 
