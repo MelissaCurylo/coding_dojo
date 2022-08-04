@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    </style>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/assets/css/custom.css">
+
+    <title>Show user</title>
+
+</head>
+<body>
+
+    <div class="container">
+        <form action="/user/show/">
+            <h2>Show User: {{user.first_name}} {{user.last_name}}</h2>
+            <input type="hidden" name="id" value={{user.id}}>
+                <div class="form-group"> Full Name: {{user.full_name()}} </div>
+                <div class="form-group"> Email: {{user.email}} </div>
+                <div class="form-group"> Created On: {{ user.created_at }} </div>
+                <div class="form-group"> Last Updated: {{ user.updated_at }} </div>
+
+                <div style="margin-top: 15px;">
+                    <input type="submit" value="Return" class="btn btn-info">
+                </div>
+        </form>
+    </div> 
+
+</body>
+</html>
