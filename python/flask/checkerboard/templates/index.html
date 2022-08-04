@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for( 'static', filename='index.css' ) }}" />
+    
+    <title>Checkerboard3</title>
+</head>
+<body>
+    <h1>Matrix on localhost: 5000/rows,columns</h1> 
+    <table>
+<!-- Jinja syntax pulling Python - line 15 means for a value in a range starting from zero ending at some value entered for rows do this if statement in line 16 that says if some value x divided by 2 does not equal 0 pocess then process the next code block BUT if it does equal zero skip code block from lines to 21 thru 30 and process code block from lines thru 44. -->
+        {% for x in range(0, rows): %}                 
+            {% if x % 2 != 0: %} 
+
+<!-- Line 21 Jinja syntax statment for loop saying for any value y in the range of zero to ending at some value entered for column do this if statement in line 22 which says if any value y divided by 2 does not equal zero then process color4 BUT if it does equal zero process code for color 5 in line 25 thru 27.  -->
+            <tr>
+                {% for y in range(0, columns): %}
+                    {% if y % 2 != 0: %}
+                    <td class="color4"></td>
+                    {% endif %}
+                    {% if y % 2 == 0: %}
+                    <td class="color5"></td>
+                    {% endif %}
+                {% endfor %}
+            </tr>
+            {% endif %}
+
+            {% if x % 2 == 0: %}
+            <tr>
+                {% for y in range(0, columns): %}
+                    {% if y % 2 != 0: %}
+                    <td class="color5"></td>
+                    {% endif %}
+                    {% if y % 2 == 0: %}
+                    <td class="color4"></td>
+                    {% endif %}
+                {% endfor %}
+            </tr>
+            {% endif %}
+        {% endfor %}
+    </table>
+</body>
+</html>
