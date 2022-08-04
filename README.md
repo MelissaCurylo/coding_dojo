@@ -38,7 +38,7 @@
   - Need to push SpacE application (GraphQL)
   - Need to push MemorE game application 
 
--**Algorithms**
+- **Algorithms**
   - Pushing after bootcamp
     
 
