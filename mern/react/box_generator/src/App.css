@@ -1,0 +1,39 @@
+.container {
+  background: rgb(2,0,36);
+  background: linear-gradient(159deg, rgba(2,0,36,1) 0%, rgba(232,232,143,1) 41%, rgba(0,212,255,1) 100%);
+  min-height: 100vh;
+  min-width: 100vw;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-grow: auto;
+  align-items: top center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(255, 255, 255);
+}
+
+.boxFlow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+
+.boxColor {
+  margin: 50px;
+  padding: 10px;
+  background-color: rgb(165, 226, 226);
+
+
+}
+
+.boxSize {
+  margin: 50px;
+  padding: 10px;
+  background-color: rgb(165, 226, 226);
+}
