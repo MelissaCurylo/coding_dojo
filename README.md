@@ -23,7 +23,7 @@
   - Need to push full_stack_mern files
   - Need to push mern_auth files
   - Need to push mern_deployment files
-  - - Update all readme.md files
+  - Update all readme.md files
        
 - **Java**
   - TBA
@@ -37,6 +37,7 @@
   - Need to push GitHub Timeline Application (GraphQL)  
   - Need to push SpacE application (GraphQL)
   - Need to push MemorE game application 
+  - Need to push Interactive Resume 
 
 - **Algorithms**
   - Pushing after bootcamp
