@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Details</title>
+</head>
+<body>
+    <h1> Welcome {{ session["first_name"] }} </h1>
+
+    <div>
+        <a href="/dashboard"> Dashboard </a>
+        <a href="/logout"> Logout </a>
+    </div>
+
+    <h1>{{ recipe.name }}</h1>
+
+
+    <p> Description:  {{ recipe.description }} </p>
+
+    
+    <p> Under 30 minutes:  
+        {% if recipe.under_thirty == 1 %} 
+            Yes
+        {% else: %}
+            NO
+        {% endif %}
+    </p>
+
+
+    <p> Instructions: {{ recipe.instructions }} </p>
+
+
+    <p> Date made: {{ recipe.created_at }}</p>
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Recipe</title>
+</head>
+<body>
+
+    <form action="/recipe/update/{{recipe.id}}" method="POST">
+
+        <div>  
+            <label for="name">Name: </label>      
+            <input type="text" id="name" name="name" value="{{recipe.name}}" /> 
+            {% for message in get_flashed_messages( category_filter = ["error_recipe_name"] ): %}
+            <p class="alert alert-danger"> {{ message }} </p>
+            {% endfor %}
+        </div>
+
+
+        <div>  
+            <label for="description">Description:  </label>     
+            <textarea name="description" id="description">{{ recipe.description }} </textarea>
+            {% for message in get_flashed_messages( category_filter = ["error_recipe_description"] ): %}
+            <p class="alert alert-danger"> {{ message }} </p>
+            {% endfor %}
+        </div>
+
+
+        <div>  
+            <label for="instructions">Instructions:  </label>     
+            <textarea name="instructions" id="instructions"> {{ recipe.instructions }}</textarea> 
+            {% for message in get_flashed_messages( category_filter = ["error_recipe_instructions"] ): %}
+            <p class="alert alert-danger"> {{ message }} </p>
+            {% endfor %}
+        </div>
+
+
+        <div>  
+            <label for="created_at">Date made on: </label>     
+            <input type="date" id="created_at" name="created_at"value="{{recipe.created_at}}" /> 
+            {% for message in get_flashed_messages( category_filter = ["error_recipe_date"] ): %}
+            <p class="alert alert-danger"> {{ message }} </p>
+            {% endfor %}
+        </div>
+
+         
+        <div>  <label for="under_thirty">Under 30 minutes? </label>     
+            <input type="radio" name="under_thirty" value="1" {% if recipe.under_thirty == 1 %} checked {% endif %}/> Yes
+            <input type="radio" name="under_thirty" value="0" {% if recipe.under_thirty == 0 %} checked {% endif %}/> No
+            <!-- same name for radio buttons as we only want the user to be able to choose one; no id needed instead need value to trigger boolean response -->
+        </div>
+
+
+        <button type="submit" class="btn btn-success mt-3"> Update </button>
+
+    </form>
+
+
+    
+</body>
+</html>
