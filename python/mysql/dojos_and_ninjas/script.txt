@@ -1,0 +1,255 @@
+-- SELECT * 
+-- FROM dojos;
+
+-- INSERT INTO dojos (name)
+-- VALUES('Tiny Tigers');
+
+-- SELECT * 
+-- FROM dojos;
+
+-- SELECT * 
+-- FROM ninjas;
+
+-- SELECT * 
+-- FROM dojos;
+
+-- INSERT INTO dojos (name)
+-- VALUES('Grasshopper');
+
+-- SELECT * 
+-- FROM dojos;
+
+-- INSERT INTO dojos (name)
+-- VALUES('Moo Duk Kwan');
+
+-- SELECT * 
+-- FROM dojos;
+
+-- SELECT * 
+-- FROM ninjas;
+
+-- INSERT INTO ninjas (dojo_id, first_name, last_name, age)
+-- VALUES(1,'Timothy','Repl',10);
+
+-- SELECT * 
+-- FROM ninjas;
+
+-- SELECT * 
+-- FROM dojos;
+
+-- DELETE FROM dojos WHERE name
+
+-- SET SQL_SAFE_UPDATES = 0;
+
+-- DELETE FROM dojos WHERE id = 2;
+
+-- DELETE FROM dojos WHERE id = 3;
+
+-- SELECT * 
+-- FROM ninjas;
+
+-- DELETE FROM ninjas WHERE id = 1;
+
+-- SELECT * 
+-- FROM dojos;
+
+-- DELETE FROM dojos WHERE id = 1;
+
+--  SELECT * 
+--  FROM dojos;
+
+-- INSERT INTO dojos (name)
+-- VALUES('Tiny Tigers');
+
+-- INSERT INTO dojos (name)
+-- VALUES('Grasshopper');
+
+-- INSERT INTO dojos (name)
+-- VALUES('Moo Duk Kwan');
+
+--  SELECT * 
+--  FROM dojos;
+
+-- SELECT * 
+-- FROM ninjas;
+
+-- INSERT INTO ninjas (dojo_id, first_name, last_name, age)
+-- VALUES(4,'Timothy','Dalloway',10);
+
+-- INSERT INTO ninjas (dojo_id, first_name, last_name, age)
+-- VALUES(4,'Virginia','Wolf',12);
+
+-- INSERT INTO ninjas (dojo_id, first_name, last_name, age)
+-- VALUES(4,'Charles', 'Dickens',12);
+
+-- INSERT INTO ninjas (dojo_id, first_name, last_name, age)
+-- VALUES(5,'Jane','Eyre',45);
+
+-- INSERT INTO ninjas (dojo_id, first_name, last_name, age)
+-- VALUES(5,'George','Eliot',35);
+
+-- INSERT INTO ninjas (dojo_id, first_name, last_name, age)
+-- VALUES(5,'David','Copperfield',39);
+
+-- INSERT INTO ninjas (dojo_id, first_name, last_name, age)
+-- VALUES(6,'Emily','Bronte',27);
+
+-- INSERT INTO ninjas (dojo_id, first_name, last_name, age)
+-- VALUES(6,'Natasha','Wang',22);
+
+-- INSERT INTO ninjas (dojo_id, first_name, last_name, age)
+-- VALUES(6,'Charlotte','Bronte',32);
+
+-- SELECT * 
+-- FROM ninjas
+-- where dojo_id = 4;
+
+-- SELECT * 
+-- FROM ninjas;
+
+-- SELECT * from ninjas ORDER BY id DESC LIMIT 1 
+
+-- dojo = 6 and ninja = 12 
+
+SELECT * 
+FROM ninjas
+LEFT JOIN dojos on dojos.id = ninjas.dojo_id
+WHERE dojos.id = 6 and ninjas.id = 12
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+20:33:39	SELECT *  FROM dojos LIMIT 0, 1000	0 row(s) returned	0.000 sec / 0.000 sec
+
+20:34:45	INSERT INTO dojos (name) VALUES('Tiny Tigers')	1 row(s) affected	0.016 sec
+
+20:35:21	SELECT *  FROM dojos LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+
+20:35:48	SELECT *  FROM ninjas LIMIT 0, 1000	0 row(s) returned	0.000 sec / 0.000 sec
+
+20:38:10	SELECT *  FROM dojos  -- INSERT INTO ninjas (dojo_id, first_name, last_name, age) -- VALUES(1,'Timothy','Repl',10) LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+
+20:39:13	INSERT INTO dojos (name) VALUES('Grasshopper')	1 row(s) affected	0.015 sec
+
+20:39:34	SELECT *  FROM dojos  -- INSERT INTO ninjas (dojo_id, first_name, last_name, age) -- VALUES(1,'Timothy','Repl',10) LIMIT 0, 1000	2 row(s) returned	0.000 sec / 0.000 sec
+
+20:41:41	INSERT INTO dojos (name) VALUES('Moo Duk Kwan')	1 row(s) affected	0.000 sec
+
+20:41:52	SELECT *  FROM dojos LIMIT 0, 1000	3 row(s) returned	0.000 sec / 0.000 sec
+
+20:42:11	SELECT *  FROM ninjas LIMIT 0, 1000	0 row(s) returned	0.000 sec / 0.000 sec
+
+20:47:04	INSERT INTO ninjas (dojo_id, first_name, last_name, age) VALUES(1,'Timothy','Repl',10)	1 row(s) affected	0.016 sec
+
+20:47:25	SELECT *  FROM ninjas LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+
+20:48:10	SELECT *  FROM dojos LIMIT 0, 1000	3 row(s) returned	0.000 sec / 0.000 sec
+
+20:51:56	DELETE FROM dojos WHERE name	Error Code: 1175. You are using safe update mode and you tried to update a table without a WHERE that uses a KEY column.  To disable safe mode, toggle the option in Preferences -> SQL Editor and reconnect.	0.000 sec
+
+20:54:14	SET SQL_SAFE_UPDATES = 0	0 row(s) affected	0.000 sec
+
+20:54:27	SET SQL_SAFE_UPDATES = 0	0 row(s) affected	0.000 sec
+
+20:54:27	DELETE FROM dojos WHERE name	Error Code: 1292. Truncated incorrect DOUBLE value: 'Tiny Tigers'	0.000 sec
+
+20:55:54	DELETE FROM dojos WHERE name = 'Tiny Tigers'	Error Code: 1451. Cannot delete or update a parent row: a foreign key constraint fails (`dojos_and_ninjas_schema`.`ninjas`, CONSTRAINT `fk_ninjas_dojos` FOREIGN KEY (`dojo_id`) REFERENCES `dojos` (`id`))	0.015 sec
+
+20:56:45	DELETE FROM dojos WHERE id = 2	1 row(s) affected	0.000 sec
+
+20:57:08	SELECT *  FROM dojos LIMIT 0, 1000	2 row(s) returned	0.000 sec / 0.000 sec
+
+21:05:27	DELETE FROM dojos WHERE id = 3	1 row(s) affected	0.016 sec
+
+21:05:41	SELECT *  FROM ninjas LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+
+21:06:03	DELETE FROM ninjas WHERE id = 1	1 row(s) affected	0.016 sec
+
+21:06:32	SELECT *  FROM dojos LIMIT 0, 1000	1 row(s) returned	0.016 sec / 0.000 sec
+
+21:06:32	DELETE FROM dojos WHERE id = 1	1 row(s) affected	0.000 sec
+
+21:06:41	DELETE FROM dojos WHERE id = 1	0 row(s) affected	0.000 sec
+
+21:07:18	SELECT *   FROM dojos LIMIT 0, 500	0 row(s) returned	0.000 sec / 0.000 sec
+
+21:07:38	INSERT INTO dojos (name) VALUES('Tiny Tigers')	1 row(s) affected	0.015 sec
+
+21:08:06	INSERT INTO dojos (name) VALUES('Grasshopper')	1 row(s) affected	0.016 sec
+
+21:08:14	INSERT INTO dojos (name) VALUES('Moo Duk Kwan')	1 row(s) affected	0.000 sec
+
+21:08:26	SELECT *   FROM dojos LIMIT 0, 500	3 row(s) returned	0.000 sec / 0.000 sec
+
+21:08:42	SELECT *  FROM ninjas LIMIT 0, 500	0 row(s) returned	0.016 sec / 0.000 sec
+
+21:08:49	INSERT INTO ninjas (dojo_id, first_name, last_name, age) VALUES(1,'Timothy','Repl',10)	Error Code: 1452. Cannot add or update a child row: a foreign key constraint fails (`dojos_and_ninjas_schema`.`ninjas`, CONSTRAINT `fk_ninjas_dojos` FOREIGN KEY (`dojo_id`) REFERENCES `dojos` (`id`))	0.000 sec
+
+21:09:23	SELECT *  FROM ninjas LIMIT 0, 500	0 row(s) returned	0.000 sec / 0.000 sec
+
+21:10:54	INSERT INTO ninjas (dojo_id, first_name, last_name, age) VALUES(1,'Timothy','Dalloway',10)	Error Code: 1452. Cannot add or update a child row: a foreign key constraint fails (`dojos_and_ninjas_schema`.`ninjas`, CONSTRAINT `fk_ninjas_dojos` FOREIGN KEY (`dojo_id`) REFERENCES `dojos` (`id`))	0.016 sec
+
+21:11:19	SELECT *   FROM dojos LIMIT 0, 500	3 row(s) returned	0.000 sec / 0.000 sec
+
+21:28:35	SELECT *  FROM ninjas LIMIT 0, 500	0 row(s) returned	0.000 sec / 0.000 sec
+
+21:28:42	INSERT INTO ninjas (dojo_id, first_name, last_name, age) VALUES(4,'Timothy','Dalloway',10)	1 row(s) affected	0.000 sec
+
+21:28:56	SELECT *  FROM ninjas LIMIT 0, 500	1 row(s) returned	0.000 sec / 0.000 sec
+
+21:30:22	INSERT INTO ninjas (dojo_id, first_name, last_name, age) VALUES(5,'Jane','Eyre',45)  -- INSERT INTO ninjas (dojo_id, first_name, last_name, age) -- VALUES(6,'EmilyBronteDalloway',27)	1 row(s) affected	0.015 sec
+
+21:30:33	INSERT INTO ninjas (dojo_id, first_name, last_name, age) VALUES(6,'EmilyBronteDalloway',27)	Error Code: 1136. Column count doesn't match value count at row 1	0.000 sec
+
+21:31:01	INSERT INTO ninjas (dojo_id, first_name, last_name, age) VALUES(6,'Emily','Bronte',27)	1 row(s) affected	0.016 sec
+
+21:31:39	INSERT INTO ninjas (dojo_id, first_name, last_name, age) VALUES(4,'Virginia','Wolf',12)	1 row(s) affected	0.016 sec
+
+21:32:39	INSERT INTO ninjas (dojo_id, first_name, last_name, age) VALUES(4,'Charles', 'Dickens',12)	1 row(s) affected	0.016 sec
+
+21:33:14	INSERT INTO ninjas (dojo_id, first_name, last_name, age) VALUES(5,'George','Eliot',35)	1 row(s) affected	0.031 sec
+
+21:33:41	INSERT INTO ninjas (dojo_id, first_name, last_name, age) VALUES(5,'David','Copperfield',39)	1 row(s) affected	0.015 sec
+
+21:34:07	INSERT INTO ninjas (dojo_id, first_name, last_name, age) VALUES(6,'Natasha','Wang',22)	1 row(s) affected	0.015 sec
+
+21:34:29	INSERT INTO ninjas (dojo_id, first_name, last_name, age) VALUES(6,'Charlotte','Bronte',32)	1 row(s) affected	0.016 sec
+
+21:35:21	SELECT *  FROM ninjas where 4 LIMIT 0, 500	9 row(s) returned	0.016 sec / 0.000 sec
+
+21:36:19	SELECT *  FROM dojos where 4 LIMIT 0, 500	3 row(s) returned	0.000 sec / 0.000 sec
+
+21:38:09	SELECT *  FROM dojos  where id = 4 LIMIT 0, 500	1 row(s) returned	0.000 sec / 0.000 sec
+
+21:38:22	SELECT *  FROM ninjas  where id = 4 LIMIT 0, 500	1 row(s) returned	0.000 sec / 0.000 sec
+
+21:38:56	SELECT *  FROM ninjas LIMIT 0, 500	9 row(s) returned	0.000 sec / 0.000 sec
+
+21:39:30	SELECT *  FROM ninjas where dojo_id = 4 LIMIT 0, 500	3 row(s) returned	0.000 sec / 0.000 sec
+
+21:39:47	SELECT *  FROM ninjas where dojo_id = 6 LIMIT 0, 500	3 row(s) returned	0.000 sec / 0.000 sec
+
+21:44:45	INSERT INTO ninjas (dojo_id) VALUES (id = 12)	Error Code: 1364. Field 'first_name' doesn't have a default value	0.000 sec
+
+21:49:23	INSERT INTO getLastRecord values(12, dojo_id)	Error Code: 1146. Table 'dojos_and_ninjas_schema.getlastrecord' doesn't exist	0.000 sec
+
+21:49:46	SELECT *  FROM ninjas  -- INSERT INTO getLastRecord values(12, dojo_id) LIMIT 0, 500	9 row(s) returned	0.000 sec / 0.000 sec
+
+21:52:01	SELECT * from getLastRecord ORDER BY id DESC LIMIT 1	Error Code: 1146. Table 'dojos_and_ninjas_schema.getlastrecord' doesn't exist	0.000 sec
+
+21:53:24	SELECT * from id ORDER BY id = 12 LIMIT 0, 500	Error Code: 1146. Table 'dojos_and_ninjas_schema.id' doesn't exist	0.000 sec
+
+21:54:33	SELECT id = 12  FROM ninjas LIMIT 0, 500	9 row(s) returned	0.000 sec / 0.000 sec
+
+21:59:21	SELECT * from getLastRecord ORDER BY id DESC LIMIT 1	Error Code: 1146. Table 'dojos_and_ninjas_schema.getlastrecord' doesn't exist	0.000 sec
+
+22:02:20	SELECT * from ninjas ORDER BY id DESC LIMIT 1	1 row(s) returned	0.000 sec / 0.000 sec
+
+22:07:35	SELECT *  FROM dojos LIMIT 0, 500	3 row(s) returned	0.015 sec / 0.000 sec
+
+22:07:55	SELECT *  FROM ninjas LIMIT 0, 500	9 row(s) returned	0.000 sec / 0.000 sec
+
+22:11:56	SELECT *  FROM ninjas LEFT JOIN dojos on dojos.id = ninjas.dojo_id LIMIT 0, 500	9 row(s) returned	0.016 sec / 0.000 sec
+
+22:13:47	SELECT *  FROM ninjas LEFT JOIN dojos on dojos.id = ninjas.dojo_id WHERE dojos.id = 6 and ninjas.id = 12 LIMIT 0, 500	1 row(s) returned	0.000 sec / 0.000 sec

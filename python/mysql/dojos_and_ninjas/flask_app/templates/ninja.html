@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container {
+            width: 300px;
+            height: auto;
+        }
+    </style>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/assets/css/custom.css">
+
+    <title>Create Ninja</title>
+</head>
+
+<body>
+    <div class="container">
+        <form action="/create/ninja" method="POST">
+            <h1 style="margin-bottom: 25px;">New Ninja</h1>
+            <form style="justify-content: space-between;">
+                <div class="form-group row">
+                    <label for="" class="col-sm-2 col-form-label">Dojo: </label>
+                    <div class="col-sm-10">
+                        <select class="form-control" name="dojo_id" id="dojo_id">
+                            {% for one_dojo in dojos %}
+                            <option value="{{ one_dojo.id }}"> {{ one_dojo.name }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="first_name" class="col-sm-2 col-form-label">First Name: </label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="first_name" id="first_name"
+                            style="margin-top: 15px; margin-bottom: 15px;">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="last_name" class="col-sm-2 col-form-label">Last Name: </label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="last_name" id="last_name"" style=" margin-top:
+                            15px; margin-bottom: 15px;">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="age" class="col-sm-2 col-form-label">Age: </label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="age" name="age"
+                            style="margin-top: 15px; margin-bottom: 15px;">
+                    </div>
+                </div>
+                <button type="submit" href="/create/ninja" name="create_ninja" id="create_ninja"
+                    value="create_ninja">Create</button>
+            </form>
+            <div class="card-footer"><a href="/dojos" class="card-link">Home</a> </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

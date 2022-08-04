@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS only -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/static/assets/css/custom.css">
+
+  <title>Show Dojo Selection</title>
+</head>
+
+<body>
+  <h1 value="{{id}}"> {{dojo.name}} Ninjas </h1>
+
+  <table class="table table-striped table-light">
+    <thead>
+      <tr>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Age</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% if ninjas != None %}
+        {% for ninja in ninjas: %}
+          <tr>
+            <td> {{ ninja.first_name }} </td>
+            <td> {{ ninja.last_name }} </td>
+            <td> {{ ninja.age }} </td>
+          </tr>
+        {% endfor %}
+      {% else %}
+        <tr>
+            <td>
+                No Ninjas Yet
+            </td>
+        </tr>
+      {% endif %}
+    </tbody>
+  </table>
+
+
+  <div class="card-footer"><a href="/dojos" class="card-link">Home</a> </div>
+</body>
+
+</html>
