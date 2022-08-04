@@ -1,0 +1,152 @@
+.container{
+    width: 600px;
+    height: 700px;
+    margin-top: 20px;
+    display: flex;    
+    margin-left: 20px;
+}
+.connection{
+    width: 210px;
+    height: 500px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column; 
+}
+.connBox1{
+    width: 200px;
+    height: 150px;
+    margin-block-start: 2%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    border-style: solid;  
+    border-color: grey;
+}
+.connBod1{
+    padding-left: 15px;
+}
+.connBox2{
+    width: 200px;
+    height: 220px;
+    margin-block-start: 2%;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;  
+    border-style: solid;
+    border-color: grey;
+}
+.connBod2{
+    padding-left: 15px;
+}
+.connBod3{
+    width: 200px;
+    height: 25px;  
+    border-style: solid;
+    border-color: grey;
+    align-content: space-around;
+}
+
+.connHead{
+    width: 200px;
+    height: 50px;
+    font: 8pt;
+    color: white;
+    background-color: #3c3b3b;
+}
+.headAlign{
+    margin-left: 10px;
+}
+.imgconn{
+    width: 20px; 
+    padding-left:5px;
+}
+.iconcheckx{
+    width: 12%;
+    height: 12%;
+    margin-left:20px;
+}
+.circle{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.profColumn{
+    width: 500px;
+    height: 700px;
+    display: flex;  
+    flex-direction: column;
+    margin-left: 50px;
+}
+.profile{
+    width: 290px;
+    display: flex;  
+    flex-direction: column; 
+    padding-top: 10px; 
+    padding-left: 20px;
+    margin-bottom: 20px;
+    border-style: solid;  
+    border-color: grey;
+}
+.profPic{
+    width: 20%;
+}
+.janeName{
+    font-size: 20pt;
+}
+.mark{
+    width: 3%;
+    margin-right: 5px;
+}
+.cog{
+    width: 4%;
+    margin-right: 4px;
+}
+.education{
+    width: 316px;
+    display: flex;  
+    flex-direction: column;  
+    border-style: solid;  
+    border-color: grey;
+}
+.eduHead{
+    font: 8pt;
+    color: white;
+    background-color: #3c3b3b;
+}
+.eduText{
+    padding-left: 20px;
+}
+.eduBod{
+    padding-left: 15px;
+}
+.boldText{
+    font-weight: bold;
+}
+.lightText{
+    font-weight: lighter;
+}
+.banner{
+    width: 800px;
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+    background-color: black;
+    color: white;
+}
+button{
+    background-color: rgb(99, 231, 231);
+    color: white;
+}
+.circle{
+    border-radius: 50%;
+    width: 10px;
+    height: 36px;
+    padding: 8px;
+    background: #fff;
+    border: 2px solid #666;
+    color: #666;
+    text-align: center;
+
+    font: 8px Arial, sans-serif;
+}

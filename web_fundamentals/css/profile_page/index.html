@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="banner">
+        <h2>Profile</h2>
+        <p>Home </p>
+        <p>My Profile</p>
+        <p>Find Connections</p>
+        <p><button type="button" onclick="logger(this)">Login</button></p>
+    </div>
+    <div class="container">
+        <div class="profColumn">
+            <div class="profile">
+                <p><img class="profPic" src="images\jane-m.jpg" alt="Jane"></p>
+                <p class="janeName">Jane Doe</p>
+                <p class="boldText"><img class="mark" src="icons\map-marker.png" alt="Jane"> Seattle</p>
+                <p class="boldText" >Developer | Engineer | Problem Solver 
+                    Master of shadows and the Internet!</p>
+                <p><img class="cog" src="icons\gear.png" alt="cog"> <a href="#">edit profile</a></p> 
+            </div>
+            <div class="education">
+                <div class="eduHead">
+                    <p class="eduText">Education</p>
+                </div>
+                    <div class="eduBod">
+                        <p class="boldText">Coding Dojo - Full Stack Bootcamp</p>
+                        <p class="lightText">Dec 2019 - Mar 2020</p>
+                        <p class="boldText">Triple black belt in Python, Mern, and C#</p>
+                    </div>
+            </div>
+        </div>
+        <div class="connection">
+            <div class="connBox1">
+                <div class="connHead">
+                    <p class="headAlign"><span class="circle">2 </span><span class="head">Connection Requests</span></p>
+                </div>
+                <div class="connBod1">
+                    <p><img class="imgconn" src="images\todd-s.jpg" alt="todd"> Todd E
+                        <img class="iconcheckx" src="icons\accept-circle.png" alt="accept">
+                        <img class="iconcheckx" src="icons\close-circle.png" alt="close">
+                    </p>
+                    <p><img class="imgconn" src="images\phil-s.jpg" alt="todd"> Phil K
+                        <img class="iconcheckx" src="icons\accept-circle.png" alt="accept">
+                        <img class="iconcheckx" src="icons\close-circle.png" alt="close">
+                    </p>
+                </div>
+            </div>
+            <div class="connBox2">
+                <div class="connHead">
+                    <p class="headAlign"><span class="circle">500<span> +</span></span><span class="head">Your Connections</span></p>
+                </div>
+                <div class="connBod2">
+                    <p><img class="imgconn" src="images\adrien-s.jpg" alt="Adriend"> Adrien D</p>
+                    <p><img class="imgconn" src="images\anne-s.jpg" alt="Ann"> Anne J</p>
+                    <p><img class="imgconn" src="images\alayne-s.jpg" alt="Alayne"> Alayne T</p>
+                    <p><img class="imgconn" src="images\arry-s.jpg" alt="Arry"> Arry Y</p>            
+                </div>
+                <div class="connBod3">
+                    <a href="#">View More</a>
+                </div> 
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
