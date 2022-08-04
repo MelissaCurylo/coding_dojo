@@ -1,0 +1,22 @@
+table{
+    width: 200px;
+    height: 200px;
+    display: inline-block;   
+    justify-content: space-evenly;
+    border-collapse: collapse;
+    margin-top: 100px;
+    margin-left: 100px;
+
+}
+th{
+    width: 200px;
+    height: 40px;
+    text-align: unset;
+    background-color: gray;
+}
+td{
+    width: 200px;
+    height: 25px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
