@@ -1,0 +1,81 @@
+<!-- Registration Form by Melissa Curylo-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Registration Form</h1>
+        <form action="#">
+            <div><h4>
+                <label for="firstName">First Name: *</label>
+                <input type="text" name="firstName" id="firstName">
+            </div></h4>
+            <div><h4>
+                <label for="lastName">Last Name: *</label>
+                <input type="text" name="lastName" id="lastName">
+            </div></h4>
+            <div><h4>
+                <label for="eAddress">Email Address: *</label>
+                <input type="email" name="eAddress" id="eAddress">
+            </div></h4>
+
+
+            <div><h4>
+                <label for="password">Password: *</label>
+                <input type="password" name="password" id="password">
+            </div></h4>
+            <div><h4>
+                <label for="passConfirm">Confirm Password: *</label>
+                <input type="password" name="passConfirm" id="passConfirm">
+            </div></h4>
+            <div>
+                <label for="dob">Birthday: </label>
+                <input type="date" name="dob" id="dob">
+            </div><br>
+            <div>
+                <label for="genderIdentityselection">Gender Identity: </label>
+                <input type="radio" name="genIdentity" value="Male" id="male">
+                <label for="male">Male</label>
+                <input type="radio" name="genIdentity" value="Female" id="female">
+                <label for="female">Female</label>
+                <input type="radio" name="genIdentity" value="Non-binary" id="non-binary">
+                <label for="non-binary">Non-binary</label>
+                <input type="radio" name="genIdentity" value="I prefer not to say" id="non-disclose">
+                <label for="non-disclose">I prefer not to say</label>
+            </div><br>
+            <div>
+                <label for="bio">A short description about yourself: </label>
+            </div>
+            <div>
+                <textarea name="bio" id="bio" cols="30" rows="3"></textarea>
+            </div><br>
+            <div>
+                <label for="faveLanguage">Select your favorite language: </label>
+                <select name="faveLanguage" id="faveLanguage">
+                    <option>Java</option> 
+                    <option>Javascript</option> 
+                    <option>Python</option>
+                    <option>Perl</option>
+                    <option>C#</option>
+                    <option>Ruby</option>
+                </select>
+            </div><br>
+            <div><h4>
+                <input type="checkbox" name="optIn" id="optIn">
+                <label for="optIn">Yes, I would like to receive periodic email updates</label>
+            </div></h4> 
+            <div>
+                <label for="createAccount"></label>
+                <input type="button" value="Create Account">
+            </div> 
+            <div><h5>
+                <label for="reqField">* Indicates a required field</label>
+            </div></h5>
+        </form>
+    </body>
+</html>
