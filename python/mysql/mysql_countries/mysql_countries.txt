@@ -1,0 +1,374 @@
+-- SELECT languages.language, countries.name, languages.percentage FROM languages
+-- JOIN countries ON languages.country_id = countries.id WHERE language = 'Slovene'
+-- ORDER BY languages.percentage DESC;
+
+-- SELECT countries.name, COUNT(cities.id) AS cities FROM cities
+-- JOIN countries ON countries.id = cities.country_id GROUP BY countries.id
+-- ORDER BY cities DESC;
+
+-- SELECT cities.name, cities.population FROM countries 
+-- LEFT JOIN cities ON countries.id = "Mexico" and cities.population >= 500000
+-- ORDER BY cities.population DESC;
+
+
+-- SELECT countries.name, languages.language, languages.percentage FROM countries
+-- LEFT JOIN languages ON countries.id = languages.country_id WHERE percentage > 89
+-- ORDER BY languages.percentage DESC;
+
+-- SELECT countries.name = 'Mexico', cities.name, cities.population FROM countries
+-- LEFT JOIN countries.name ON countries.id = cities.country_id WHERE population > 10
+-- ORDER BY cities.population DESC;
+
+-- SELECT countries.name, countries.city, countries.population FROM countries 
+-- WHERE countries.id = 'Mexico' and countries.population > 500000;
+
+-- SELECT countries.name, countries.surface_area, countries.population FROM countries 
+-- WHERE countries.surface_area < 501 and countries.population > 100000;
+
+-- SELECT cities.name, cities.population from cities 
+-- WHERE cities.population > 1000000;
+
+-- SELECT countries.name, languages.language, languages.percentage FROM countries
+-- LEFT JOIN languages ON countries.id = languages.country_id WHERE percentage > 89
+-- ORDER BY languages.percentage DESC;
+
+-- SELECT countries.name, countries.government_form, countries.capital, countries.life_expectancy FROM countries
+-- WHERE countries.government_form = 'Constitutional Monarchy' and countries.capital > 200 and countries.life_expectancy > 75;
+
+-- SELECT name, government_form, capital, life_expectancy FROM countries
+-- WHERE government_form = 'Constitutional Monarchy' and capital > 200 and life_expectancy > 75;
+
+-- SELECT countries.name, cities.name, cities.district, countries.population FROM countries 
+-- LEFT JOIN countries.name, countries.population to cities.country_id
+-- WHERE countries.name = 'Argentina', cities.district = 'Buenos Aires', cities.population = 500000;
+
+
+-- SELECT countries.region, COUNT(countries.region) AS countries 
+-- FROM countries GROUP BY countries.region
+-- ORDER BY countries DESC;
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+1 row(s) affected
+
+0 row(s) affected
+
+0 row(s) affected
+
+0 row(s) affected
+
+0 row(s) affected
+
+0 row(s) affected, 1 warning(s): 3719 'utf8' is currently an alias for the character set UTF8MB3, but will be an alias for UTF8MB4 in a future release. Please consider using UTF8MB4 in order to be unambiguous.
+
+0 row(s) affected
+
+0 row(s) affected
+
+0 row(s) affected
+
+0 row(s) affected
+
+0 row(s) affected
+
+0 row(s) affected
+
+0 row(s) affected
+
+0 row(s) affected
+
+0 row(s) affected, 1 warning(s): 3719 'utf8' is currently an alias for the character set UTF8MB3, but will be an alias for UTF8MB4 in a future release. Please consider using UTF8MB4 in order to be unambiguous.
+
+0 row(s) affected, 3 warning(s): 1681 Integer display width is deprecated and will be removed in a future release. 1681 Integer display width is deprecated and will be removed in a future release. 1681 Integer display width is deprecated and will be removed in a future release.
+
+0 row(s) affected, 1 warning(s): 1287 'utf8mb3' is deprecated and will be removed in a future release. Please use utf8mb4 instead
+
+0 row(s) affected
+
+0 row(s) affected
+
+4079 row(s) affected Records: 4079  Duplicates: 0  Warnings: 0
+
+0 row(s) affected
+
+0 row(s) affected
+
+0 row(s) affected
+
+0 row(s) affected
+
+0 row(s) affected, 1 warning(s): 3719 'utf8' is currently an alias for the character set UTF8MB3, but will be an alias for UTF8MB4 in a future release. Please consider using UTF8MB4 in order to be unambiguous.
+
+0 row(s) affected, 8 warning(s): 1681 Integer display width is deprecated and will be removed in a future release. 1681 Specifying number of digits for floating point data types is deprecated and will be removed in a future release. 1681 Integer display width is deprecated and will be removed in a future release. 1681 Integer display width is deprecated and will be removed in a future release. 1681 Specifying number of digits for floating point data types is deprecated and will be removed in a future release. 1681 Specifying number of digits for floating point data types is deprecated and will be removed in a future release. 1681 Specifying number of digits for floating point data types is deprecated and will be removed in a future release. 1681 Integer display width is deprecated and will be removed in a future release.
+
+0 row(s) affected, 1 warning(s): 1287 'utf8mb3' is deprecated and will be removed in a future release. Please use utf8mb4 instead
+
+0 row(s) affected
+
+0 row(s) affected
+
+239 row(s) affected Records: 239  Duplicates: 0  Warnings: 0
+
+0 row(s) affected
+
+0 row(s) affected
+
+0 row(s) affected
+
+0 row(s) affected
+
+0 row(s) affected, 1 warning(s): 3719 'utf8' is currently an alias for the character set UTF8MB3, but will be an alias for UTF8MB4 in a future release. Please consider using UTF8MB4 in order to be unambiguous.
+
+0 row(s) affected, 3 warning(s): 1681 Integer display width is deprecated and will be removed in a future release. 1681 Specifying number of digits for floating point data types is deprecated and will be removed in a future release. 1681 Integer display width is deprecated and will be removed in a future release.
+
+0 row(s) affected, 1 warning(s): 1287 'utf8mb3' is deprecated and will be removed in a future release. Please use utf8mb4 instead
+
+0 row(s) affected
+
+0 row(s) affected
+
+984 row(s) affected Records: 984  Duplicates: 0  Warnings: 0
+
+0 row(s) affected
+
+0 row(s) affected
+
+0 row(s) affected
+
+0 row(s) affected, 1 warning(s): 3135 'NO_ZERO_DATE', 'NO_ZERO_IN_DATE' and 'ERROR_FOR_DIVISION_BY_ZERO' sql modes should be used with strict mode. They will be merged with strict mode in a future release.
+
+0 row(s) affected
+
+0 row(s) affected
+
+0 row(s) affected
+
+0 row(s) affected
+
+0 row(s) affected
+
+0 row(s) affected
+
+0 row(s) affected
+
+0 row(s) affected
+
+500 row(s) returned
+
+239 row(s) returned
+
+500 row(s) returned
+
+Error Code: 1049. Unknown database 'countries'
+
+29 row(s) returned
+
+4 row(s) returned
+
+239 row(s) returned
+
+192 row(s) returned
+
+47 row(s) returned
+
+500 row(s) returned
+
+Error Code: 1049. Unknown database 'languages'
+
+Error Code: 1054. Unknown column 'countries.country_id' in 'where clause'
+
+500 row(s) returned
+
+4 row(s) returned
+
+4 row(s) returned
+
+4 row(s) returned
+
+4 row(s) returned
+
+239 row(s) returned
+
+500 row(s) returned
+
+239 row(s) returned
+
+500 row(s) returned
+
+Error Code: 1054. Unknown column 'COUNT' in 'field list'
+
+1 row(s) returned
+
+Error Code: 1064. You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC LIMIT 0, 500' at line 3
+
+Error Code: 1054. Unknown column 'cities' in 'order clause'
+
+232 row(s) returned
+
+Error Code: 1054. Unknown column 'cities' in 'order clause'
+
+Error Code: 1054. Unknown column 'cities' in 'order clause'
+
+239 row(s) returned
+
+Error Code: 1109. Unknown table 'cities' in field list
+
+500 row(s) returned
+
+239 row(s) returned
+
+239 row(s) returned
+
+239 row(s) returned
+
+239 row(s) returned
+
+Error Code: 1064. You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM cities' at line 1
+
+500 row(s) returned
+
+Error Code: 1066. Not unique table/alias: 'cities'
+
+500 row(s) returned
+
+Error Code: 1066. Not unique table/alias: 'cities'
+
+500 row(s) returned
+
+Error Code: 1054. Unknown column 'cities.name' in 'field list'
+
+Error Code: 1054. Unknown column 'couuntries.name' in 'field list'
+
+500 row(s) returned
+
+Error Code: 1054. Unknown column 'cities.populaion' in 'where clause'
+
+500 row(s) returned
+
+1 row(s) returned
+
+500 row(s) returned
+
+Error Code: 1066. Not unique table/alias: 'countries'
+
+Error Code: 1054. Unknown column 'cities.name' in 'field list'
+
+500 row(s) returned
+
+500 row(s) returned
+
+0 row(s) returned
+
+239 row(s) returned
+
+0 row(s) returned
+
+0 row(s) returned
+
+0 row(s) returned
+
+0 row(s) returned
+
+500 row(s) returned
+
+500 row(s) returned
+
+Error Code: 1049. Unknown database 'countries'
+
+0 row(s) returned
+
+Error Code: 1052. Column 'name' in field list is ambiguous
+
+Error Code: 1052. Column 'name' in field list is ambiguous
+
+Error Code: 1052. Column 'name' in field list is ambiguous
+
+239 row(s) returned
+
+81 row(s) returned
+
+Error Code: 1049. Unknown database 'countries'
+
+44 row(s) returned
+
+44 row(s) returned
+
+237 row(s) returned
+
+44 row(s) returned
+
+237 row(s) returned
+
+7 row(s) returned
+
+Error Code: 1054. Unknown column 'countries.city' in 'field list'
+
+12 row(s) returned
+
+12 row(s) returned
+
+500 row(s) returned
+
+4 row(s) returned
+
+Error Code: 1054. Unknown column 'langauges.percentage' in 'field list'
+
+Error Code: 1054. Unknown column 'langauges.percentage' in 'field list'
+
+Error Code: 1054. Unknown column 'langauges.percentage' in 'field list'
+
+Error Code: 1054. Unknown column 'langauges.percentage' in 'field list'
+
+4 row(s) returned
+
+232 row(s) returned
+
+1 row(s) returned
+
+Error Code: 1064. You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'COUNT(cities.name) as total_cities FROM cities JOIN countries ON cities.country_' at line 1
+
+1 row(s) returned
+
+1 row(s) returned
+
+1 row(s) returned
+
+1 row(s) returned
+
+Error Code: 1054. Unknown column 'Country' in 'on clause'
+
+1 row(s) returned
+
+1 row(s) returned
+
+1 row(s) returned
+
+1 row(s) returned
+
+1 row(s) returned
+
+1 row(s) returned
+
+1 row(s) returned
+
+Error Code: 1049. Unknown database 'cities'
+
+1 row(s) returned
+
+Error Code: 1064. You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'countries.name FROM countries INNER JOIN * cities.name ON countries.name = citie' at line 1
+
+1 row(s) returned
+
+Error Code: 1049. Unknown database 'countries'
+
+Error Code: 1066. Not unique table/alias: 'name'
+
+232 row(s) returned
+
+239 row(s) returned
+
+239 row(s) returned
+
+81 row(s) returned
+
+25 row(s) returned
