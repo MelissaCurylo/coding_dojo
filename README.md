@@ -1,6 +1,6 @@
 # coding_dojo
 
-**<ins>All assignments from the below stacks. Currently uploading many items </ins>** 
+**<ins>All assignments from the below stacks. TO-DO will be complete by end of bootcamp </ins>** 
 
 
 **<ins>To-Do:</ins>**
