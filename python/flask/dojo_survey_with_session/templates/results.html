@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+</head>
+
+<body>
+    <div class="container">
+        <form action="/form_details" method="POST">
+            <h1>Dojo Survey Details</h1>
+            <h3> Name:{{ session["details"]["name"] }} </h3>
+            <h3> Dojo Location: {{ session["details"]["location"] }}</h3>
+            <h3> Favorite Language: {{ session["details"]["language"] }}</h3>
+            <h3> Comments: {{ session["details"]["comments"] }}</h3>
+            <h3> Proficiency level: {{ session["details"]["toggle"] }} </h3>
+            
+            <h3> <a href="https://www.codingdojo.com/coding-bootcamp">Link to Resource: Coding Dojo</a>
+                {{ session["details"]["toggle"] }} </h3>
+
+        </form>
+    </div>
+</body>
+
+</html>

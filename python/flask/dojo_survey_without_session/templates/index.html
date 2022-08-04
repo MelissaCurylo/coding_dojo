@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='index.css')}}" />
+    <title>index</title>
+</head>
+
+<body>
+    <div class="container">
+        <form action="/result" method="POST">
+            <h1>Dojo Survey</h1>
+            <h4>Name: </h4>
+            <h4><input type="text" id="name" name="name" class="name"></h4>
+
+            <h4>Dojo Location:</h4>
+            <select class="location" id="location" name="location">
+                <option selected class="options">--Select A Location--</option>
+                <option value="1">Chicago</option>
+                <option value="2">Seattle</option>
+                <option value="3">Burbank</option>
+                <option value="4">Bellevue</option>
+                <option value="5">Online</option>
+            </select>
+
+            <h4>Favorite Language: </h4>
+            <select class="language" id="language" name="" langugae>
+                <option selected class="options">--Select A Language--</option>
+                <option value="1">Python</option>
+                <option value="2">C#</option>
+                <option value="3">Javascript</option>
+                <option value="4">C</option>
+                <option value="5">Perl</option>
+            </select>
+
+            <!-- how to add chosen language instead of saying in chosen language? -->
+            <h4>What is your proficiency level in language chosentogg?
+                <h5 class="togglegroup">
+                    <input type="radio" id="toggle-on" name="toggle" unchecked>
+                    <label for="toggle-off">Basic</label>
+                    <input type="radio" id="toggle-on" name="toggle" unchecked>
+                    <label for="toggle-off">Intermediate</label>
+                    <input type="radio" id="toggle-on" name="toggle" unchecked>
+                    <label for="toggle-off">Expert</label>
+                </h5>
+            </h4>
+
+            <h4>Comments: </h4>
+            <textarea name="commentsbox" class="commentsbox" id="commentsbox" name="" comments cols="40"
+                rows="10"></textarea>
+
+            <h5>
+                <input type="checkbox" value=""" id=tickbox" class="checkbox" name="tickbox">
+                <label class="tickbox" for="tickbox">
+                    Tick here for a learning resource!
+                </label>
+            </h5>
+
+            <button class="bootton" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+*{
+    color: whitesmoke;
+    font-feature-settings: "blwm";
+    letter-spacing: 1.45px;
+}
+.container{
+    color: whitesmoke;
+    background-color: rgb(78, 70, 70);
+    border-color: rgb(153, 136, 136);
+    border-style: groove;
+    border-style: ridge;
+    border-width: 15px;
+    width: 500px;
+    height: 800px;
+    margin-left: 100px;
+    margin-top: 50px;
+    padding: 0px 0px 30px 30px;
+}
+
+h1{
+    color: goldenrod;
+}
+
+.location,.language, .name, .commentsbox{
+    background-color: rgb(153, 136, 136);
+    border-radius: 10px;
+    width: 220px;
+    margin-left: 25px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+
+h4{
+    margin-bottom: 10px;
+}
+
+.togglegroup{
+    margin-left: 25px;
+}
+
+input[type='radio']:checked:after {
+    background-color: goldenrod;
+    border: 2px solid whitesmoke;
+    border-radius: 50%;
+    top: -2px;
+    left: -1px;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    width: 10px;
+    height: 10px;
+}
+
+.tickbox:checked:after{
+    background-color: goldenrod;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+button{
+    background-color:goldenrod ;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    margin-left: 50px;
+    margin-top: 25px;
+}
