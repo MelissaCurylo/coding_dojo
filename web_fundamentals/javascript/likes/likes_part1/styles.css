@@ -1,0 +1,30 @@
+.container{
+    width: 50em;
+    display:block; 
+    margin-left: 100px; 
+    margin-right: 200px;
+    padding-right: 100px;
+}
+.main{
+    width: 20em;
+    height: 130px;
+    margin-block-start: 2%;
+    border-style: solid;
+    border-color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.p1{
+    margin-left: -1.25em;
+}
+.p3{
+    margin-left: 1.25em;
+    margin-right: 1.25em;
+}
+button{
+    background-color: #ffc107;
+}

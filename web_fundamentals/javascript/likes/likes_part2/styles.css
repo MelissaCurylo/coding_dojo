@@ -1,0 +1,82 @@
+.container{
+    width: 50em;
+    display:block; 
+    margin-left: 100px; 
+    margin-right: 200px;
+    padding-right: 100px;
+}
+.post{
+    width: 20em;
+    height: 130px;
+    margin-bottom: 2%;
+    margin-left: 10px;
+    border: 4px solid black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.p1{
+    margin-left: -1.25em;
+}
+.p3{
+    margin-left: 1.25em;
+    margin-right: 1.25em;
+}
+button{
+    background-color: #ffc107;
+}
+.profile{
+    width: 120px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 4px solid black;
+}
+img{
+    width: 60px;
+    height: auto;
+}
+.profileName{
+    font-size: 16pt;
+    font-weight: bold;
+}
+.profile a{
+    margin-top: 25px;
+}
+.banner{
+    width: 30em;
+    display: block;
+    align-content: left;
+    background-color: black;
+    color: white;
+}
+h1 {
+    padding-top: 10px;
+    padding-left: 15px;
+    margin-top: 0px;
+    padding-bottom: 10px;
+}
+.feedHeader{
+    width: 40em;
+    display: block;
+    align-content: center;
+    background-color: white;
+    color: black;
+    padding-left: 20%;
+    padding-bottom: 10px;
+    font-size: 16pt;
+    font-weight: bold;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
