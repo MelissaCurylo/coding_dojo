@@ -1,0 +1,64 @@
+.container{
+    width: 40%;
+    padding: 1% 1% 2% 1%;
+    scroll-margin: contents;
+    background-color: rgb(226, 179, 223);
+    border: 15px groove rebeccapurple;
+    display: inline-flex row wrap;
+}
+h1 {
+    font-weight: bold; margin: 0%; text-justify: space-evenly; text-size-adjust: auto; 
+}
+.C_atapulting{
+    width: auto;
+    padding: 10px;
+    margin: 5px;
+    background-color: cyan;
+    border: 15px dotted rgb(66, 153, 51);
+    justify-content: space-evenly;
+}
+.O_ppressors{ 
+    width: auto;
+    padding: 10px;
+    margin: 5px;
+    margin-top: 5%;
+    background-color:salmon;
+    border: 15px dotted rgb(153, 51, 92);
+    justify-content: space-evenly;
+}
+.D_rivingTech{
+    width: auto;
+    padding: 10px;
+    margin: 5px;
+    margin-top: 5%;
+    background-color: rgb(0, 255, 183);
+    border: 15px dotted rgb(153, 126, 51);
+    justify-content: space-evenly;
+} 
+.E_quality{
+    width: auto;
+    padding: 10px;
+    margin: 5px;
+    margin-top: 5%;
+    background-color: rgb(204, 0, 255);
+    border: 15px dotted rebeccapurple;
+    justify-content: space-evenly;
+}
+img.C_atapulting{ 
+    height: 115px; width: auto; justify-items: space-evenly;
+}
+img.O_ppressors{
+    height: 115px; width: auto; margin: 2px; 
+}
+img.D_rivingTech{
+    height: 115px; width: auto; margin: 2px;
+}
+img.E_quality{
+    height: 115px; width: auto; margin: 2px; 
+}
+img {
+    height: 115px; width: auto; margin: 2px; object-fit: scale-down; 
+}
+p {
+    font-weight: bold; text-justify: space-evenly; text-size-adjust: auto; margin-bottom: 0%;
+}
