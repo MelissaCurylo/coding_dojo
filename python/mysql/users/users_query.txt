@@ -1,0 +1,51 @@
+-- USE users_schema;
+
+-- INSERT INTO users (first_name, last_name, email) 
+-- VALUES('Harley', 'Quinn', 'byebyebirdy@gmail.com'), ('Martian', 'Manhunter', 'marmar@gmail.com'), ('Green', 'Lantern', 'lightson@gmail.com');
+
+-- SELECT * FROM users;
+
+-- SELECT users.email FROM users WHERE users.id < 2;
+
+-- SELECT users.email FROM users WHERE users.id > 2;
+
+-- UPDATE users SET last_name="Pancakes" WHERE users.id = 3;
+
+-- DELETE FROM users WHERE users.id=2;
+
+-- SELECT * FROM users ORDER BY users.first_name DESC;
+-- SELECT * FROM users ORDER BY users.first_name ASC;
+
+-- SELECT * FROM users ORDER BY users.last_name DESC;
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////
+	#	Time	Action	Message	Duration / Fetch
+3	1	22:01:33	USE users_schema	0 row(s) affected	0.000 sec
+3	2	22:02:04	INSERT INTO users (first_name, last_name, email) VALUES('Harley', 'Quinn', 'byebyebirdy@gmail.com'), ('Martian', 'Manhunter', 'marmar@gmail.com'), ('Green', 'Lantern', 'lightson@gmail.com')	3 row(s) affected
+ Records: 3  Duplicates: 0  Warnings: 0	0.015 sec
+3	3	22:02:24	SELECT * FROM users
+ LIMIT 0, 500	3 row(s) returned	0.000 sec / 0.000 sec
+3	4	22:04:07	SELECT users.email FROM users
+ LIMIT 0, 500	3 row(s) returned	0.000 sec / 0.000 sec
+0	5	22:04:48	SELECT users.email FROM users WHERE user.id < 2
+ LIMIT 0, 500	Error Code: 1054. Unknown column 'user.id' in 'where clause'	0.000 sec
+3	6	22:05:10	SELECT users.email FROM users WHERE users.id < 2
+ LIMIT 0, 500	1 row(s) returned	0.000 sec / 0.000 sec
+3	7	22:06:16	SELECT users.email FROM users WHERE users.id > 2
+ LIMIT 0, 500	1 row(s) returned	0.000 sec / 0.000 sec
+3	8	22:07:46	UPDATE users SET last_name="Pancakes" WHERE users.id = 3	1 row(s) affected
+ Rows matched: 1  Changed: 1  Warnings: 0	0.000 sec
+3	9	22:07:55	SELECT * FROM users
+ LIMIT 0, 500	3 row(s) returned	0.000 sec / 0.000 sec
+3	10	22:08:56	DELETE FROM users WHERE users.id=2	1 row(s) affected	0.015 sec
+3	11	22:09:06	SELECT * FROM users
+ LIMIT 0, 500	2 row(s) returned	0.000 sec / 0.000 sec
+3	12	22:09:58	SELECT * FROM users ORDER BY users.first_name DESC
+ LIMIT 0, 500	2 row(s) returned	0.000 sec / 0.000 sec
+3	13	22:10:12	SELECT * FROM users ORDER BY users.first_name ASC
+ LIMIT 0, 500	2 row(s) returned	0.000 sec / 0.000 sec
+3	14	22:10:53	SELECT * FROM users
+ LIMIT 0, 500	2 row(s) returned	0.000 sec / 0.000 sec
