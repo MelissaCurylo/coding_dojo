@@ -11,7 +11,7 @@ Objectives:
 - Ninja Bonus (Optional): Can you include a "last_name" as a parameter and print out both the first and last names?
 - Sensei Bonus (Optional): Include a route that takes a parameter times and returns a string that repeats the greeting that many times on the page.
 
--To-Do Check List:
+To-Do Check List:
 1. Create an app that will show in the browser either a default value of "human" or with the name provided in the URL query string.
 2. NINJA BONUS: Include a "last_name" as a parameter and print out both the first and last names.
 3. SENSEI BONUS: Add a "times" parameter and show the greeting that many times.
