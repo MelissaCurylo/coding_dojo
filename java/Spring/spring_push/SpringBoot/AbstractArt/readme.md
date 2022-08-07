@@ -3,6 +3,7 @@ Assignment: Absract Art
 In this assignment we will practice using abstract classes by creating art. We will create an abstract Art class and inherit from it to create Painting and Sculpture classes.
 
 - Create an abstract class called Art. The Art class should have the following member variables and an abstract method called viewArt(). The viewArt() method should be implemented in the child classes and will be used to print information about the artwork.
+
 **Member Variables**	
 - String title
 - String author
