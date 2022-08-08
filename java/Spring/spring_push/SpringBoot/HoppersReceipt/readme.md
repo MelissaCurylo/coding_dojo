@@ -7,7 +7,7 @@ Grace Hopper is giving a talk at MIT. But first she needs to order some thin met
 - Assignment: For this assignment we will take data from our controller and render it to show a receipt for a single item purchase. 
 
 
-- Quick Tips for Debugging:
+Quick Tips for Debugging:
 1. Check that you've added the correct dependencies for rendering JSP and JSTL in both your pom.xml and index.jsp files:
     	<dependency>
                 <groupId>org.apache.tomcat.embed</groupId>
