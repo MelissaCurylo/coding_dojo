@@ -1,0 +1,18 @@
+.container {
+	background: rgb(125,104,108); 
+	background: linear-gradient(90deg, rgba(125,104,108,1) 27%, rgba(55,133,78,1) 90%);
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: top;
+	align-items: center;
+}
+
+.date {
+	color: blue;
+}
+.time {
+	color: green;
+}
