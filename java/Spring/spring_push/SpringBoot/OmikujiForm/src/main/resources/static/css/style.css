@@ -1,0 +1,87 @@
+.container1{
+	background: rgb(34,193,195);
+	background: linear-gradient(0deg, rgba(34,193,195,1) 53%, rgba(45,111,253,1) 100%);
+	width: 100vw;
+	height: 100vh;
+	color: #ffffff;
+	font-family: papyrus;
+	font-weight: normal;
+	font-stretch: expanded;
+}
+.container2{
+	display: flex-box;
+	flex-wrap: wrap;
+	align-items: top;
+	align-content: center;
+	justify-content: center;
+	margin-left: 30%;
+	padding-top: 2%;
+}
+
+.formContainer{
+	display: inline-block;
+	border-style: solid;
+	border-color: pink;
+	justify-content: space-between;
+	align-items: center;
+}
+.numberLabel{ 
+	width:40px;
+}
+
+.divSpace{
+	padding: 10px;
+	padding-right: 15px;
+	margin-bottom: 10px;
+	margin-left: 40px;
+}
+
+.divSpace2{
+	padding: 10px;
+	margin-bottom: 1px;
+	margin-left: 15%;
+}
+
+.divSpaceBtn{
+	padding: 10px;
+	margin-bottom: 10px;
+	margin-left: 20%;
+}
+
+.btn{
+	margin-left: 40px;
+	background-color: blue;
+	color: white;
+}
+.header{
+	margin-left: 50px;
+}
+
+.container2ResPage {
+	display: flex-box;
+	flex-wrap: wrap;
+	align-items: top;
+	align-content: center;
+	justify-content: center;
+	margin-left: 10%;
+	padding-top: 2%;
+} 
+
+.formContainerResPage{
+	display: inline-block;
+	border-style: solid;
+	border-color: pink;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.divSpaceResPage{
+	width: 300px;
+	padding: 10px;
+	padding-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+
+
+
