@@ -1,6 +1,7 @@
 <h1 dir="auto" > Ninja Gold Game </h1>
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------
+<svg>
+</svg>
 
 Objectives:
 Implement forms and process user input using POST routes
