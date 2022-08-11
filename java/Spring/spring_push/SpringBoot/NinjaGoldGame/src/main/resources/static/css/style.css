@@ -1,0 +1,151 @@
+.container1{
+	background: rgb(193, 140, 0);
+	background: radial-gradient(circle, rgb(249, 164, 6) 0%, rgba(153,123,84,1) 88%);
+	height: 100vh;
+	color: #ffffff;
+	font-family: papyrus;
+	font-weight: normal;
+	font-stretch: expanded;
+}
+.container2{
+	display: flex-box;
+	flex-wrap: wrap;
+	align-items: top;
+	align-content: center;
+	justify-content: center;
+	padding-top: 2%;
+}
+
+
+.card-group {
+	display: flex;
+	flex-flow: row;
+	flex-wrap: no-wrap;
+}
+
+.card-img-top{
+	width: 100%;
+	height: 8vw;
+	background-size: cover;
+}
+
+.divSpace{
+	width: 200px;
+	padding: 10px;
+	padding-right: 15px;
+	margin-bottom: 10px;
+	margin-left: 40px;
+	border-style: solid;
+	border-color: rgb(221, 72, 0);
+}
+
+
+.header{
+	margin-left: 40px;
+}
+
+
+
+.headerBar{
+	display: inline-flex;
+	width: 1320px;
+}
+.divSpaceAccountBox{
+	width: 300px;
+	padding: 10px;
+	padding-right: 15px;
+	margin-bottom: 20px;
+	margin-left: 40px;
+	border-style: solid;
+	border-color: rgb(221, 72, 0);
+}
+.boxReset{
+	margin-left: 720px;
+}
+
+
+.card-body{
+	margin-left: 25px;
+	align-items: center;
+}
+.card-text{
+	height: 60px;
+}
+.divSpaceBtn{
+	padding: 5px;
+	margin-bottom: 5px;
+}
+.btn{
+	background-color: blue;
+	color: white;
+}
+
+
+
+
+.activityHeader{
+	margin-left: 40px;
+}
+.activityCardBody{
+	margin-left: 40px;
+}
+.activityBox{
+	width: 1320px;
+	background-color: #808040;
+}
+
+
+
+
+
+.divSpaceGamePlay{
+	width: 500px;
+	padding: 10px;
+	padding-right: 15px;
+	margin-bottom: 10px;
+	margin-left: 40px;
+	border-style: solid;
+	border-color: rgb(221, 72, 0);
+}
+.card-groupGamePlay{
+	display: flex;
+	flex-flow: row;
+	flex-wrap: no-wrap;
+	margin-left: 640px;
+	margin-top: 200px;
+}
+.btnGamePlay{
+	margin-left: 150px;
+	padding: 10px;
+	background-color: blue;
+	color: white;
+}
+.divSpaceBtnGamePlay{
+	padding: 5px;
+	margin-bottom: 5px;
+}
+
+
+.btnReset{
+	margin-left: 150px;
+	padding: 10px;
+	background-color: blue;
+	color: white;
+}
+
+
+
+
+.headerGameOver{
+	margin-left: 100px;	
+}
+
+.divSpaceGameOver {
+	width: 700px;
+	padding: 10px;
+	padding-right: 15px;
+	margin-bottom: 10px;
+	margin-left: 40px;
+	border-style: solid;
+	border-color: rgb(221, 72, 0);
+}
