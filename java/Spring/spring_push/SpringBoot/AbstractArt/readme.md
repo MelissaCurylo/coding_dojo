@@ -1,4 +1,4 @@
-Assignment: Absract Art
+<title>Assignment: Absrract Art</title>
 
 In this assignment we will practice using abstract classes by creating art. We will create an abstract Art class and inherit from it to create Painting and Sculpture classes.
 
