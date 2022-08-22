@@ -18,8 +18,8 @@
 - The dashboard page shows a table with all the project the user IS involved in.
 - A user is only able to edit and delete projects they created.
 
+<a href="https://github.com/MelissaCurylo/coding_dojo/blob/master/java/Spring/spring_push/SpringBoot/ProjectManager/logreg.png">
 
-<img src="https://github.com/MelissaCurylo/coding_dojo/blob/master/java/Spring/spring_push/SpringBoot/ProjectManager/logreg.png" alt style="max-width: 50%;">
 <img src="https://github.com/MelissaCurylo/coding_dojo/blob/master/java/Spring/spring_push/SpringBoot/ProjectManager/regValidation.png">
 
 <img src="https://github.com/MelissaCurylo/coding_dojo/blob/master/java/Spring/spring_push/SpringBoot/ProjectManager/loginValidation.png">
