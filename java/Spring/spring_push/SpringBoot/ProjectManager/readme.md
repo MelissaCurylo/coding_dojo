@@ -20,3 +20,10 @@
 
 
 <img src="https://github.com/MelissaCurylo/coding_dojo/blob/master/java/Spring/spring_push/SpringBoot/ProjectManager/logreg.png">
+<img src="https://github.com/MelissaCurylo/coding_dojo/blob/master/java/Spring/spring_push/SpringBoot/ProjectManager/regValidation.png">
+
+<img src="https://github.com/MelissaCurylo/coding_dojo/blob/master/java/Spring/spring_push/SpringBoot/ProjectManager/loginValidation.png">
+<img src="https://github.com/MelissaCurylo/coding_dojo/blob/master/java/Spring/spring_push/SpringBoot/ProjectManager/Dashboard_showing_access_limits.png">
+<img src="https://github.com/MelissaCurylo/coding_dojo/blob/master/java/Spring/spring_push/SpringBoot/ProjectManager/create_with_validation.png">
+<img src="https://github.com/MelissaCurylo/coding_dojo/blob/master/java/Spring/spring_push/SpringBoot/ProjectManager/future_date_validation.png">
+<img src="https://github.com/MelissaCurylo/coding_dojo/blob/master/java/Spring/spring_push/SpringBoot/ProjectManager/details.png">
