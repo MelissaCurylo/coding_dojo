@@ -1,6 +1,7 @@
 <h1 dir="auto" > Project Manager </h1>
 
 <h3> Objectives: </h3>
+
 - Build many-to-many relationships into a full-featured application, to prepare for project week.
 
 
