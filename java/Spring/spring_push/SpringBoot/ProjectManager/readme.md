@@ -17,3 +17,6 @@
 - The dashboard page shows a table with all the projects the user is not involved in
 - The dashboard page shows a table with all the project the user IS involved in.
 - A user is only able to edit and delete projects they created.
+
+
+<img src="https://github.com/MelissaCurylo/coding_dojo/blob/master/java/Spring/spring_push/SpringBoot/ProjectManager/logreg.png">
