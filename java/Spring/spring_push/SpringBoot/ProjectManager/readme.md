@@ -6,6 +6,7 @@
 
 
 <h3> To-Do Check List: </h3>
+
 - Implement the models and relationships outlined in the above wireframe.
 - Include all the pages seen in the wireframe for the regular features.
 - Ensure login & registration is complete
