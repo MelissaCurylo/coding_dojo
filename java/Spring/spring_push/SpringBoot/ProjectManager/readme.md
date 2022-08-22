@@ -25,7 +25,7 @@
 <img src="https://github.com/MelissaCurylo/coding_dojo/blob/master/java/Spring/spring_push/SpringBoot/ProjectManager/regValidation.png" alt style="max-width: 100%;"></h1>
 
 <h1> Login with validation:
-<img src="https://github.com/MelissaCurylo/coding_dojo/blob/master/java/Spring/spring_push/SpringBoot/ProjectManager/loginValidation.png alt style="max-width: 100%;""></h1>
+<img src="https://github.com/MelissaCurylo/coding_dojo/blob/master/java/Spring/spring_push/SpringBoot/ProjectManager/loginValidation.png" alt style="max-width: 100%;""></h1>
 
 <h1> Dashboard with limited access to edit projects:
 <img src="https://github.com/MelissaCurylo/coding_dojo/blob/master/java/Spring/spring_push/SpringBoot/ProjectManager/Dashboard_showing_access_limits.png" alt style="max-width: 100%;"></h1>
